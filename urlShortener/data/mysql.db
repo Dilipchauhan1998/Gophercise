@@ -1,0 +1,6 @@
+//command to create mysql database and table
+
+CREATE DATABASE url_shortener;
+USE url_shortener;
+CREATE TABLE path_to_url(id INT AUTO_INCREMENT PRIMARY KEY, path VARCHAR(255) NOT NULL, url VARCHAR(255) NOT NULL);
+INSERT INTO path_to_url(path, url) VALUES ("/urlshort", "https://github.com/gophercises/urlshort"),("/urlshort-final","https://github.com/gophercises/urlshort/tree/solution");
